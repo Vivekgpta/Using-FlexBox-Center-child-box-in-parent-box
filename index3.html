@@ -11,40 +11,48 @@
         <div class="child"></div>
     </div>
     <style>
-        .parent{
+        .parent {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
             height: 548px;
             background-color: #213555;
-            /* background-color: white; */
         }
-        
-        .child{
+
+        .child {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 4288;
-            height: 2859;
+            width: 50%;
+            height: 50%;
             border-radius: 5px;
             background-color: #3E5879;
-            /* background-color: white; */
-            /* box-shadow: 0px 0px 400px whitesmoke; */
+            background-image: url('your-image-url.jpg'); /* Add your background image URL here */
+            background-size: cover;
+            background-position: center;
         }
-        .child:hover{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 4288;
-            height:2859;
-            border-radius: 5px;
 
-            background-color: white; 
+        .child:hover {
+            background-color: white;
             box-shadow: 1px 1px 20px black;
             transition: .5s;
         }
+
+        @media (max-width: 768px) {
+            .child {
+                width: 70%;
+                height: 60%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .child {
+                width: 90%;
+                height: 50%;
+            }
+        }
     </style>
-    <!-- background-color: #3E5879; -->
 </body>
 </html>
+
