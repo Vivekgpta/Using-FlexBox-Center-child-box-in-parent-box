@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box(CenterWithChild)</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+    <style>
+        .parent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 548px;
+            background-color: #213555;
+            /* background-color: white; */
+        }
+        
+        .child{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 4288;
+            height: 2859;
+            border-radius: 5px;
+            background-color: #3E5879;
+            /* background-color: white; */
+            /* box-shadow: 0px 0px 400px whitesmoke; */
+        }
+        .child:hover{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 4288;
+            height:2859;
+            border-radius: 5px;
+
+            background-color: white; 
+            box-shadow: 1px 1px 20px black;
+            transition: .5s;
+        }
+    </style>
+    <!-- background-color: #3E5879; -->
+</body>
+</html>
